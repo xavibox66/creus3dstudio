@@ -1,128 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CREUS 3D STUDIO | Figuras Cartoon 3D personalizadas</title>
-  <meta name="description" content="Figuras Cartoon 3D personalizadas creadas a partir de tus fotografías. Diseño, impresión 3D y envíos.">
-  <link rel="canonical" href="https://creus3dstudio.es/">
+  <meta name="description" content="Figuras Cartoon 3D personalizadas, impresas en 3D y pintadas a mano con aerógrafo.">
+  <link rel="canonical" href="https://xavibox66.github.io/creus3dstudio/">
   <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    :root{--rojo:#e30613;--negro:#151515;--gris:#6b6b6b;--gris-claro:#f5f5f5;--blanco:#fff}
-    html{scroll-behavior:smooth}
-    body{font-family:Arial,Helvetica,sans-serif;background:var(--blanco);color:var(--negro);line-height:1.5}
-    img{max-width:100%;display:block}
-    a{text-decoration:none}
-    .container{width:min(1100px,90%);margin:auto}
-    header{padding:20px 0;background:#fff;border-bottom:1px solid #eee}
-    .header-inner{display:flex;justify-content:center;align-items:center}
-    .logo{width:165px;max-height:90px;object-fit:contain}
-    .hero{text-align:center;padding:72px 0 60px}
-    .hero h1{font-size:clamp(38px,7vw,68px);line-height:1.02;max-width:850px;margin:auto;letter-spacing:-2px}
-    .hero h1 span{color:var(--rojo)}
-    .hero p{margin:24px auto 0;max-width:650px;font-size:19px;color:var(--gris)}
-    .buttons{margin-top:34px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:15px 25px;border-radius:8px;font-weight:700;transition:.2s}
-    .btn-primary{background:var(--rojo);color:#fff}
-    .btn-secondary{background:var(--negro);color:#fff}
-    .btn:hover{transform:translateY(-2px)}
-    section{padding:68px 0}
-    .section-title{text-align:center;margin-bottom:38px}
-    .section-title h2{font-size:36px;margin-bottom:10px}
-    .section-title p{color:var(--gris)}
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .card{
-      border-radius:18px;overflow:hidden;background:#fff;aspect-ratio:4/5;
-      box-shadow:0 8px 24px rgba(0,0,0,.08);border:1px solid #eee
-    }
-    .card img{width:100%;height:100%;object-fit:contain;background:#fff}
-    .how{background:var(--gris-claro)}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-    .step{background:#fff;padding:35px 25px;border-radius:16px;text-align:center}
-    .step-number{width:48px;height:48px;border-radius:50%;background:var(--rojo);color:#fff;display:grid;place-items:center;margin:0 auto 20px;font-size:20px;font-weight:700}
-    .step h3{margin-bottom:10px;font-size:20px}
-    .step p{color:var(--gris)}
-    .shipping{text-align:center}
-    .shipping-box{max-width:720px;margin:auto;padding:45px;border-radius:18px;background:var(--negro);color:#fff}
-    .shipping-box h2{font-size:32px;margin-bottom:14px}
-    .shipping-box p{color:#d5d5d5;font-size:18px}
-    .contact{text-align:center;padding-bottom:90px}
-    .contact h2{font-size:40px;margin-bottom:12px}
-    .contact p{color:var(--gris);max-width:620px;margin:auto}
-    .contact-info{margin-top:30px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
-    footer{border-top:1px solid #eee;text-align:center;padding:30px 15px;color:var(--gris);font-size:14px}
-    @media(max-width:750px){
-      .hero{padding-top:52px}
-      .gallery,.steps{grid-template-columns:1fr}
-      .gallery{max-width:500px;margin:auto}
-      .shipping-box{padding:35px 22px}
-      .logo{width:145px}
-    }
+    :root{--red:#f10b24;--ink:#111318;--muted:#646870;--line:#e7e8eb;--soft:#f5f6f8;--white:#fff;--shadow:0 18px 50px rgba(15,18,25,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.5}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:12px;z-index:20;background:#fff;padding:10px}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand img{width:170px;height:62px;object-fit:contain}nav{display:flex;gap:28px;align-items:center;font-weight:650;font-size:14px}nav a{padding:9px 0;border-bottom:2px solid transparent}nav a:hover,nav a:focus{color:var(--red);border-color:var(--red)}
+    .hero{background:linear-gradient(90deg,#fff 0 44%,#f1f2f3 44%);overflow:hidden}.hero-grid{min-height:560px;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center}.hero-copy{padding:70px 54px 70px 0;position:relative;z-index:2}.eyebrow{color:var(--red);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}h1{font-size:clamp(42px,5vw,66px);line-height:.98;letter-spacing:-.055em;margin:15px 0 24px;max-width:620px}h1 span{color:var(--red)}.lead{font-size:clamp(18px,2vw,23px);line-height:1.45;max-width:600px;margin:0;color:#30333a}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:7px;font-weight:800;border:2px solid var(--red);transition:.18s}.btn.primary{background:var(--red);color:#fff}.btn.secondary{background:#fff;color:var(--red)}.btn:hover{transform:translateY(-2px)}
+    .hero-visual{height:100%;min-height:560px;position:relative;overflow:hidden;background:#d7d4cf}.hero-visual img{position:absolute;width:181%;max-width:none;height:auto;left:-80%;top:-3.3%;filter:saturate(.98) contrast(1.02)}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.22),transparent 20%)}
+    .proof-strip{border-block:1px solid var(--line);background:#fff}.proof-grid{display:grid;grid-template-columns:repeat(4,1fr)}.proof{padding:19px 22px;display:flex;align-items:center;gap:14px;border-right:1px solid var(--line)}.proof:last-child{border:0}.icon{width:38px;height:38px;display:grid;place-items:center;color:var(--red);font-size:24px;flex:none}.proof strong{display:block;font-size:14px}.proof small{color:var(--muted)}
+    section{padding:82px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}h2{font-size:clamp(32px,4vw,46px);line-height:1.05;letter-spacing:-.04em;margin:0}.section-head p{max-width:570px;color:var(--muted);margin:0}.red-rule{width:42px;height:4px;background:var(--red);border-radius:3px;margin-top:12px}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.work-card{position:relative;min-height:390px;border-radius:12px;overflow:hidden;background:radial-gradient(circle at 50% 30%,#444851,#181a1f 72%);box-shadow:var(--shadow)}.work-card img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.work-card.preserve img{object-fit:contain;background:#ececeb}.work-card.detail img{object-position:50% 21%;transform:scale(1.65)}.caption{position:absolute;z-index:2;inset:auto 0 0;padding:54px 17px 17px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.9))}.caption strong{display:block;font-size:17px}.caption small{opacity:.85}
+    .craft{background:var(--soft)}.craft-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}.craft-copy p{font-size:18px;color:var(--muted);max-width:610px}.features{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:28px}.feature{background:#fff;border:1px solid var(--line);padding:18px;border-radius:12px}.feature b{display:block;margin:5px 0}.feature span{color:var(--muted);font-size:14px}.real-piece{display:grid;grid-template-columns:1.15fr .85fr;gap:10px;min-height:470px}.real-piece img{height:100%;width:100%;object-fit:cover;border-radius:14px}.real-piece img:last-child{object-position:50% 18%}
+    .packaging{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}.packaging img{width:100%;height:360px;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.step{padding:30px 26px;border:1px solid var(--line);border-radius:14px;background:#fff}.num{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#ffdce1;font-size:21px;font-weight:900}.step h3{font-size:21px;margin:18px 0 9px}.step p{color:var(--muted);margin:0}.deadline{font-weight:800;display:block;margin-top:12px}
+    .order{background:linear-gradient(135deg,#f7f7f8,#fff)}.order-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:48px;align-items:start}.order-intro p{color:var(--muted);font-size:18px}.order-intro img{margin-top:25px;height:390px;width:100%;object-fit:cover;object-position:50% 18%;border-radius:14px}
+    form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 16px 45px rgba(15,18,25,.07)}.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}label{font-weight:750;font-size:14px}input,select,textarea{width:100%;border:1px solid #d8dbe0;border-radius:8px;padding:13px 14px;background:#fff;color:var(--ink)}textarea{min-height:120px;resize:vertical}.upload{border:1px dashed #b9bdc5;padding:24px;text-align:center;background:#fafafa}.privacy{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:13px}.privacy input{width:auto;margin-top:3px}.disabled{width:100%;border:0;border-radius:8px;padding:15px;background:#c4c6ca;color:#fff;font-weight:850;cursor:not-allowed}.form-status{font-size:13px;color:#8b4c00;background:#fff3df;border:1px solid #f2d39d;border-radius:8px;padding:12px;margin:0}
+    .contact{background:var(--ink);color:#fff;padding:42px 0}.contact-grid{display:flex;justify-content:space-between;gap:24px;align-items:center}.contact .brand img{background:#fff;border-radius:8px}.contact-links{display:flex;gap:24px;flex-wrap:wrap;color:#e4e5e7}.contact a:hover{text-decoration:underline}.privacy-note{font-size:12px;color:#aeb1b7;max-width:530px;margin-top:12px}
+    @media(max-width:900px){nav{gap:16px}.hero{background:#fff}.hero-grid,.craft-grid,.order-grid{grid-template-columns:1fr}.hero-copy{padding:52px 0 38px}.hero-visual{min-height:490px}.gallery{grid-template-columns:repeat(2,1fr)}.proof-grid{grid-template-columns:repeat(2,1fr)}.proof:nth-child(2){border-right:0}.steps{grid-template-columns:1fr}.real-piece{min-height:390px}.order-intro img{display:none}}
+    @media(max-width:640px){.container{width:min(100% - 26px,1160px)}.nav{height:auto;padding:12px 0;display:block}.brand img{width:145px;height:50px}.nav nav{overflow-x:auto;padding:8px 0 2px;white-space:nowrap;justify-content:flex-start}.hero-grid{display:flex;flex-direction:column}.hero-copy{order:1}.hero-visual{order:2;width:100vw;min-height:390px}.hero-visual img{width:210%;left:-105%;top:-1.7%}h1{font-size:44px}.proof-grid{grid-template-columns:1fr}.proof{border-right:0;border-bottom:1px solid var(--line)}section{padding:60px 0}.section-head{display:block}.section-head p{margin-top:18px}.gallery{grid-template-columns:1fr}.work-card{min-height:450px}.features,.packaging,.fields{grid-template-columns:1fr}.packaging img{height:320px}.field.full{grid-column:auto}.real-piece{grid-template-columns:1fr;min-height:auto}.real-piece img{height:360px}.contact-grid{display:grid}.contact-links{display:grid;gap:8px}}
   </style>
 </head>
 <body>
-<header>
-  <div class="container header-inner">
-    <img src="logo.png" alt="CREUS 3D STUDIO" class="logo">
-  </div>
-</header>
-<main>
-  <section class="hero">
-    <div class="container">
-      <h1>Convierte tu foto en un <span>Cartoon 3D</span></h1>
-      <p>Figuras personalizadas creadas a partir de tus fotografías. Diseño, impresión 3D y envíos.</p>
-      <div class="buttons">
-        <a href="#trabajos" class="btn btn-secondary">Ver trabajos</a>
-        <a href="mailto:xavi.box@gmx.com?subject=Quiero%20mi%20figura%20Cartoon%203D&body=Hola%20CREUS%203D%20STUDIO,%0D%0A%0D%0AMe%20gustaría%20pedir%20información%20para%20crear%20mi%20figura%203D.%0D%0A%0D%0AGracias." class="btn btn-primary">Pedir mi figura</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="trabajos">
-    <div class="container">
-      <div class="section-title">
-        <h2>Algunos trabajos</h2>
-        <p>Cada personaje se crea de forma personalizada a partir de fotografías.</p>
-      </div>
-      <div class="gallery">
-        <div class="card"><img src="deportista.png" alt="Figura Cartoon 3D deportista"></div>
-        <div class="card"><img src="chica_rosa.png" alt="Figura Cartoon 3D con ropa rosa"></div>
-        <div class="card"><img src="chico_blanco.png" alt="Figura Cartoon 3D con camiseta blanca"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="how">
-    <div class="container">
-      <div class="section-title"><h2>¿Cómo funciona?</h2></div>
-      <div class="steps">
-        <div class="step"><div class="step-number">1</div><h3>Me envías tus fotos</h3><p>Cuéntame tu idea y envíame fotografías claras de la persona.</p></div>
-        <div class="step"><div class="step-number">2</div><h3>Creo tu Cartoon 3D</h3><p>Diseño un personaje personalizado intentando conservar sus rasgos y estilo.</p></div>
-        <div class="step"><div class="step-number">3</div><h3>Lo imprimo y te lo envío</h3><p>Preparo tu figura mediante impresión 3D para que puedas recibirla en casa.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="shipping">
-    <div class="container">
-      <div class="shipping-box">
-        <h2>📦 Envíos disponibles</h2>
-        <p>Puedes recibir tu figura Cartoon 3D directamente en casa.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact">
-    <div class="container">
-      <h2>¿Quieres tu propia figura?</h2>
-      <p>Escríbeme y cuéntame tu idea. Te responderé con la información necesaria para empezar.</p>
-      <div class="contact-info">
-        <a href="mailto:xavi.box@gmx.com?subject=Quiero%20mi%20figura%20Cartoon%203D&body=Hola%20CREUS%203D%20STUDIO,%0D%0A%0D%0AMe%20gustaría%20pedir%20información%20para%20crear%20mi%20figura%203D.%0D%0A%0D%0AGracias." class="btn btn-primary">✉ Pedir mi figura</a>
-        <a href="https://www.tiktok.com/@creus3dstudio" target="_blank" rel="noopener" class="btn btn-secondary">TikTok @creus3dstudio</a>
-      </div>
-    </div>
-  </section>
-</main>
-<footer>© 2026 CREUS 3D STUDIO</footer>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header id="inicio"><div class="container nav"><a class="brand" href="#inicio" aria-label="CREUS 3D STUDIO, inicio"><img src="logo.png" alt="CREUS 3D STUDIO"></a><nav aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#trabajos">Trabajos</a><a href="#proceso">Cómo funciona</a><a href="#pedidos">Pedidos</a><a href="#contacto">Contacto</a></nav></div></header>
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title"><div class="container hero-grid"><div class="hero-copy"><span class="eyebrow">Figuras únicas, hechas para ti</span><h1 id="hero-title">Convierte tu foto en una figura <span>Cartoon 3D personalizada</span></h1><p class="lead">Diseño personalizado, impresión 3D y acabado pintado a mano con aerógrafo.</p><div class="actions"><a class="btn primary" href="#trabajos">Ver trabajos →</a><a class="btn secondary" href="#pedidos">Pedir figura</a></div></div><div class="hero-visual" aria-label="Figura personalizada en un estudio de pintura con aerógrafo"><img src="assets/mockup-referencia.png" alt="Figura de hombre sentado siendo pintada con aerógrafo en un estudio"></div></div></section>
+    <div class="proof-strip"><div class="container proof-grid"><div class="proof"><span class="icon">◇</span><div><strong>Impresión 3D</strong><small>Preparada con detalle</small></div></div><div class="proof"><span class="icon">✦</span><div><strong>Pintada a mano</strong><small>Acabado artesanal</small></div></div><div class="proof"><span class="icon">➤</span><div><strong>Aerógrafo</strong><small>Aplicación cuidada</small></div></div><div class="proof"><span class="icon">▱</span><div><strong>Packaging cuidado</strong><small>Lista para regalar</small></div></div></div></div>
+    <section id="trabajos"><div class="container"><div class="section-head"><div><h2>Trabajos realizados</h2><div class="red-rule"></div></div><p>La misma figura real, fotografiada desde distintos ángulos para mostrar el modelado, la pintura y los detalles.</p></div><div class="gallery"><article class="work-card"><img src="assets/corredora-frontal-estudio.png" alt="Figura real terminada de corredora con dorsal 765, vista frontal"><div class="caption"><strong>Figura final</strong><small>Pintada a mano con aerógrafo</small></div></article><article class="work-card preserve"><img src="assets/corredora-trasera-real.jpg" alt="Figura real de corredora, vista trasera"><div class="caption"><strong>Vista trasera</strong><small>Fotografía original sin alterar</small></div></article><article class="work-card detail"><img src="assets/corredora-frontal-estudio.png" alt="Detalle del rostro y acabado de la figura real"><div class="caption"><strong>Detalle del rostro</strong><small>Acabado y expresión</small></div></article><article class="work-card"><img src="assets/corredora-concepto.png" alt="Imagen conceptual de la corredora usada como referencia"><div class="caption"><strong>Concepto inicial</strong><small>Referencia previa al modelado</small></div></article></div></div></section>
+    <section class="craft" aria-labelledby="craft-title"><div class="container craft-grid"><div class="craft-copy"><h2 id="craft-title">Acabado artesanal</h2><div class="red-rule"></div><p>Cada figura se imprime en 3D y se termina a mano, combinando pintura manual y aerógrafo para cuidar cada volumen y detalle.</p><div class="features"><div class="feature"><span class="icon">◇</span><b>Impresión 3D</b><span>El modelo toma forma capa a capa.</span></div><div class="feature"><span class="icon">✦</span><b>Pintura a mano</b><span>Detalles terminados de forma artesanal.</span></div><div class="feature"><span class="icon">➤</span><b>Aerógrafo</b><span>Aplicación gradual del color.</span></div><div class="feature"><span class="icon">✧</span><b>Detalles únicos</b><span>Ropa, accesorios y rasgos personales.</span></div></div></div><div class="real-piece"><img src="assets/hombre-completo-real.jpg" alt="Figura real personalizada de hombre sentado"><img src="assets/hombre-detalle-real.jpg" alt="Detalle del rostro de la figura real"></div></div></section>
+    <section aria-labelledby="pack-title"><div class="container"><div class="section-head"><div><h2 id="pack-title">Packaging cuidado</h2><div class="red-rule"></div></div><p>La presentación se prepara por separado para proteger la figura y hacer que llegue lista para regalar.</p></div><div class="packaging"><img src="assets/packaging-perspectiva.jpg" alt="Caja de CREUS 3D STUDIO vista en perspectiva"><img src="assets/packaging-frontal.jpg" alt="Caja de CREUS 3D STUDIO vista frontal"></div></div></section>
+    <section id="proceso" class="craft" aria-labelledby="process-title"><div class="container"><div class="section-head"><div><h2 id="process-title">¿Cómo funciona?</h2><div class="red-rule"></div></div><p>Primero revisamos la idea y el presupuesto. La fabricación solo empieza cuando apruebas la propuesta y confirmas el anticipo.</p></div><div class="steps"><article class="step"><div class="num">1</div><h3>Me envías tus fotos</h3><p>Rellena el formulario, adjunta varias fotografías y cuéntame cómo quieres tu figura.</p></article><article class="step"><div class="num">2</div><h3>Te envío una propuesta</h3><p>Recibirás por email una imagen previa y un presupuesto personalizado. Si los aceptas, abonarás el 50% y enviarás el comprobante.</p></article><article class="step"><div class="num">3</div><h3>Creo tu figura y te la envío</h3><p>Modelo, imprimo y pinto la figura. Te envío fotografías del resultado y, tras recibir el saldo, preparo el envío.</p><span class="deadline">Plazo estimado: 10–15 días desde la aprobación y el anticipo.</span></article></div></div></section>
+    <section id="pedidos" class="order" aria-labelledby="order-title"><div class="container order-grid"><div class="order-intro"><h2 id="order-title">Solicita tu figura</h2><div class="red-rule"></div><p>Cuéntame tu idea. La solicitud inicial no exige ningún pago.</p><img src="assets/corredora-frontal-real.jpg" alt="Figura personalizada real de corredora"></div><form aria-describedby="form-disabled" onsubmit="return false"><div class="fields"><div class="field"><label for="nombre">Nombre *</label><input id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre"></div><div class="field"><label for="email">Correo electrónico *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com"></div><div class="field full"><label for="fotos">Sube tus fotos *</label><input class="upload" id="fotos" name="fotos" type="file" accept="image/jpeg,image/png,image/webp" multiple></div><div class="field"><label for="estilo">Estilo de figura *</label><select id="estilo" name="estilo"><option value="">Selecciona un estilo</option><option>Cartoon Real</option><option>Cartoon Glam</option><option>Otro</option></select></div><div class="field"><label for="descripcion">Descripción</label><textarea id="descripcion" name="descripcion" placeholder="Pose, ropa, accesorios y cualquier detalle importante"></textarea></div><label class="privacy field full"><input type="checkbox" name="privacidad"><span>Acepto que mis datos y fotografías se utilicen únicamente para estudiar esta solicitud. No se publicarán sin autorización.</span></label><p class="form-status field full" id="form-disabled"><strong>Envío aún no habilitado.</strong> El formulario está diseñado, pero no transmite ni almacena datos hasta aprobar un servicio seguro de recepción.</p><button class="disabled field full" type="submit" disabled>Envío pendiente de integración</button></div></form></div></section>
+  </main>
+  <footer id="contacto" class="contact"><div class="container contact-grid"><div><a class="brand" href="#inicio"><img src="logo.png" alt="CREUS 3D STUDIO"></a><p class="privacy-note">Las fotografías de clientes no se almacenan en este repositorio público. La recepción de solicitudes se activará únicamente con una integración aprobada.</p></div><div class="contact-links"><a href="mailto:xavi.box@gmx.com">✉ xavi.box@gmx.com</a><a href="https://www.tiktok.com/@creus3dstudio" target="_blank" rel="noopener noreferrer">TikTok @creus3dstudio</a><span>© 2026 CREUS 3D STUDIO</span></div></div></footer>
 </body>
 </html>
