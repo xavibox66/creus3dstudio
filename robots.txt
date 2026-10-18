@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xavibox66.github.io/creus3dstudio/sitemap.xml
